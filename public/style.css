@@ -1,0 +1,106 @@
+/* General button styling */
+.btn {
+    border-radius: 25px; /* Rounded corners for all buttons */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+    border: none; /* Remove default border */
+}
+
+/* Primary button styling */
+.btn-primary {
+    background: linear-gradient(135deg, #ff6f61, #d43f4f); /* Gradient background */
+    color: #fff; /* Text color */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #d43f4f, #ff6f61); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Secondary button styling */
+.btn-secondary {
+    background: linear-gradient(135deg, #4a4a4a, #1c1c1c); /* Gradient background */
+    color: #fff; /* Text color */
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #1c1c1c, #4a4a4a); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Replay button styling */
+.btn-replay {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 12px 24px; /* Padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+.btn-replay:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.btn-replay:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 105, 97, 0.5); /* Custom focus outline */
+}
+
+/* Grid styling */
+.grid {
+    display: grid;
+    gap: 10px; /* Gap between cells */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Top margin */
+}
+
+/* Cell styling */
+.cell {
+    width: 60px; /* Cell width */
+    height: 60px; /* Cell height */
+    border: 2px solid #333; /* Cell border */
+    background-color: #222; /* Cell background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px; /* Font size */
+    color: #f0f0f0; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.cell:hover {
+    background-color: #333; /* Background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the cell on hover */
+}
+
+/* X and O colors */
+.cell.x {
+    color: #ff6f61; /* X color */
+    font-weight: bold; /* Bold text */
+}
+
+.cell.o {
+    color: #6bb9ff; /* O color */
+    font-weight: bold; /* Bold text */
+}
+
+/* History game styling */
+.history-game {
+    border: 1px solid #555; /* Border color */
+    padding: 15px; /* Padding */
+    margin-bottom: 20px; /* Bottom margin */
+    background-color: rgba(255, 255, 255, 0.2); /* Background color */
+    border-radius: 15px; /* Rounded corners */
+}
